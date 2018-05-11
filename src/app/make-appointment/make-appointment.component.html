@@ -1,0 +1,39 @@
+<div fxLayout fxLayoutAlign="center" style="margin: 50px 50px;">
+  <mat-card fxLayout="column" fxFlex="1 1 50%" fxFlex.lt-sm="1 1 auto">
+    <mat-card-title style="display:inline">Appointment Form</mat-card-title>
+    <p>If you would like to arrange for a consultation appointment with <b>Dr. Gary A. Aaronson, D.O. </b>please fill out this Appointment Form.</p>
+    <form [formGroup]="appointmentFormGroup" (ngSubmit)="onSubmit()" fxLayout="column" #appointmentForm="ngForm">
+      <mat-form-field>
+        <input matInput id="appdate" [matDatepicker]="appdate" placeholder="Choose an Appointment Date:" formControlName="appdate" required>
+        <mat-datepicker-toggle matSuffix [for]="appdate"></mat-datepicker-toggle>
+        <mat-datepicker #appdate></mat-datepicker>
+        <mat-error *ngIf="(appointmentForm.submitted || appointmentFormGroup.get('appdate').touched) && appointmentFormGroup.get('appdate').invalid">
+          Appointment Date can't be empty!
+        </mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <mat-placeholder>Choose an Available Time:</mat-placeholder>
+        <input type="text" matInput id="apptime" formControlName="apptime" [matAutocomplete]="auto" required>
+        <mat-error *ngIf="(appointmentForm.submitted || appointmentFormGroup.get('apptime').touched) && appointmentFormGroup.get('apptime').invalid">
+          Appointment Time can't be empty!
+        </mat-error>
+      </mat-form-field>
+      <mat-autocomplete #auto="matAutocomplete">
+        <mat-option *ngFor="let option of options" [value]="option">
+          {{ option }}
+        </mat-option>
+      </mat-autocomplete>
+      <mat-form-field>
+        <mat-placeholder>Reason for Visit</mat-placeholder>
+        <input type="text" matInput id="reason" formControlName="reason" required>
+        <mat-error *ngIf="(appointmentForm.submitted || appointmentFormGroup.get('reason').touched) && appointmentFormGroup.get('reason').invalid">
+          Visit Reason can't be empty!
+        </mat-error>
+      </mat-form-field>
+      <p>
+        <button type="submit" mat-raised-button color="primary">Submit</button>
+        <button type="reset" mat-raised-button color="primary">Cancel</button>
+      </p>
+    </form>
+  </mat-card>
+</div>

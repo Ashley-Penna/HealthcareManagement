@@ -1,0 +1,73 @@
+<link href="./../test_files/css.css" rel="stylesheet" type="text/css"> 
+<link href="./../test_files/bootstrap-namespaced.min.css" rel="stylesheet" type="text/css"> 
+<link href="./../test_files/global-ribbon.css" rel="stylesheet" type="text/css"> 
+<link href="./../test_files/animate.min.css" rel="stylesheet" type="text/css"> 
+<script src="./../test_files/bootstrap.min.js.download"></script>
+
+<link href="./../test_files/pagestyles.aspx.css" rel="stylesheet" type="text/css">
+<header>
+    <div class="jefferson-header"> 
+        <nav class="jefferson-header navbar navbar-default navbar-fixed-top" id="global-navigation"> 
+          <div class="container"> <!-- Brand and toggle get grouped for better mobile display --> 
+            <div class="navbar-header"> 
+              <button aria-expanded="false" class="navbar-toggle collapsed" data-target="#bs-global-navbar-collapse" data-toggle="collapse" type="button">
+                <span class="sr-only">Toggle navigation</span> 
+                <span class="icon-bar"></span> 
+                <span class="icon-bar"></span> 
+                <span class="icon-bar"></span>
+              </button> 
+              <a class="navbar-brand" href="http://www.jeffersonhealth.org/"><img alt="Jefferson Health" src="./../test_files/jefferson-logo.png"></a> 
+              <div class="brand-skcc">Home of Sidney Kimmel Medical College</div> 
+            </div> 
+            <div class="collapse navbar-collapse" id="bs-global-navbar-collapse"> 
+              <ul class="nav navbar-nav navbar-right"> 
+                <li class="dropdown"> 
+                  <a class="nav-heading" data-toggle="dropdown" href="https://www.ariahealth.org/#">All Locations
+                    <span class="caret"></span>
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-left"> 
+                    <li><a href="http://www.abingtonhealth.org/our-locations/" target="_blank">Abington</a></li> 
+                    <li><a href="https://www.ariahealth.org/about-aria/campus-locations-and-outpatient-sites">Aria</a></li> 
+                    <li><a href="http://hospitals.jefferson.edu/find-a-location/?utm_source=jefferson&amp;utm_medium=nav&amp;utm_campaign=global" target="_blank">Jefferson</a></li> 
+                    <li><a href="https://www.kennedyhealth.org/facilities-directory?field_category=1571&amp;title=&amp;field_addressgeo_latlon_op=-&amp;field_addressgeo_latlon=" target="_blank">Kennedy</a></li> 
+                  </ul> 
+                </li> 
+                <li class="dropdown"> 
+                  <a class="nav-heading" data-toggle="dropdown" href="https://www.ariahealth.org/#">Careers<span class="caret"></span></a> 
+                  <ul class="dropdown-menu dropdown-menu-left"> 
+                    <li><a href="http://www.abingtonhealth.org/JoinOurTeam/" target="_blank">Abington</a></li> 
+                    <li><a href="https://www.ariahealth.org/careers-education">Aria</a></li> 
+                    <li><a href="http://hr.jefferson.edu/human-resources/careers.html?utm_source=jefferson&amp;utm_medium=nav&amp;utm_campaign=global" target="_blank">Jefferson</a></li> 
+                    <li><a href="https://www.kennedyhealth.org/careers" target="_blank">Kennedy</a></li>
+                  </ul> 
+                </li> 
+                <li class="dropdown"> 
+                  <a class="nav-heading" data-toggle="dropdown" href="https://www.ariahealth.org/#">Give Now<span class="caret"></span></a> 
+                  <ul class="dropdown-menu dropdown-menu-left"> 
+                    <li><a href="http://www.abingtonhealth.org/WaysOfGiving/" target="_blank">Abington</a></li> 
+                    <li><a href="https://w3.jefferson.edu/giving/aria.html">Aria</a></li> 
+                    <li><a href="https://w3.jefferson.edu/giving.cfm?utm_source=jefferson&amp;utm_medium=nav&amp;utm_campaign=global" target="_blank">Jefferson</a></li>
+                    <li><a href="https://www.kennedyhealth.org/giving-kennedy-health-care-foundation" target="_blank">Kennedy</a></li>
+                  </ul>
+                </li>
+                <li class="hidden-xs hidden-sm"> 
+                  <div class="navbar-phone-1"> Call 1-800-JEFF-NOW </div> 
+                </li> 
+                <li><a class="nav-heading" href="http://www.jefferson.edu/university.html" style="border-bottom: 0;">UNIVERSITY</a></li> 
+                <li class="visible-xs visible-sm" style="padding-top: 20px;"> 
+                  <div class="navbar-phone-2"> 1-800-JEFF-NOW </div> 
+                </li> 
+              </ul> 
+            </div><!-- /.navbar-collapse --> 
+          </div><!-- /.container-fluid --> 
+        </nav> 
+      </div> 
+</header>
+
+<div id="wrapper">
+  <app-header></app-header>
+  <main>
+    <router-outlet></router-outlet>
+  </main>
+  <app-footer></app-footer>
+</div>

@@ -1,0 +1,148 @@
+﻿/* Required Settings */
+.carousel .tabwindow
+{
+    overflow: hidden;
+
+    /* IE6/7 Fix */
+    position: relative;
+}
+
+.carousel .tablist
+{
+    position: relative;
+}
+
+.carousel .viewport
+{
+    overflow: hidden;
+
+    /* IE6/7 Fix */
+    position: relative;
+}
+
+.carousel .panel
+{
+    float: left;
+}
+
+.carousel .panellist
+{
+    position: relative;
+}
+
+.carousel .tab
+{
+    float: left;
+}
+
+
+/* Optional Styling */
+/* The outer container for each carousel */
+.carousel
+{
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Fixed height, if you fancy it */
+/*
+.carousel .panel
+{
+    height: 315px;
+}
+*/
+
+/* The outer container for the panels */
+.carousel .viewport
+{
+    width: 500px;
+    background-color: #008ab2;
+    padding-top: 2px;
+    padding-bottom: 3px;
+}
+
+/* Each individual tab */
+.carousel .tab
+{
+    padding: 1px 0px 2px 0px;
+    margin: 0px 2px;
+    background-color: #008ab2;
+}
+
+/* The currently selected tab */
+.carousel .current.tab
+{
+    padding: 2px;
+    background-color: #8ab200;
+}
+
+/* In our example case, we have images for tabs
+    This styles them */
+.carousel .tab img
+{
+    width: 60px;
+    height: 45px;
+}
+
+.carousel .current.tab img
+{
+    width: 120px;
+    height: 90px;
+}
+
+/* The outer container for tabs */
+.carousel .tabwindow
+{
+    height: 90px;
+    width: 500px;
+}
+
+/* This isn't actually part of the carousel,
+    but we use buttons to control the carousel
+    through its API, and a box to hold everything */
+.videocontrols
+{
+    background-image: url('/Content/css/images/vidarrows-sprite.gif');
+    cursor: pointer;
+    display: inline;
+}
+
+.videocontrols.next:active
+{
+    background-position: 25px 50px;
+}
+
+.videocontrols.previous:active
+{
+    background-position: 0px 50px;
+}
+
+.videocontrols.next
+{
+    background-position: 25px 25px;
+    float: right;
+}
+
+.videocontrols.previous
+{
+    background-position: 0px 25px;
+    float: left;
+}
+
+.videocontrols.disabled.previous
+{
+    background-position: 0px 0px;
+}
+
+.videocontrols.disabled.next
+{
+    background-position: 25px 0px;
+}
+
+.videobox
+{
+    width: 560px;
+    margin-left: auto;
+    margin-right: auto;
+}

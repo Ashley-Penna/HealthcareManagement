@@ -1,0 +1,85 @@
+<div id="header">
+  <div class="top-bar">
+    
+    <div class="top-nav">
+      <div *ngIf="(this.as.userSubject | async)?.firstname; else loggedIn">
+        <div *ngIf="(this.as.userSubject | async)?.profiles[0].type =='ROLE_PATIENT'; else doctor">
+          <ul>
+            <li><a mat-button (click)="onHome()">Home</a></li>
+            <li><a href="https://www.ariahealth.org/about-aria">About Us</a></li>
+            <li><a href="https://www.ariahealth.org/about-aria/connect-with-aria">Connect with Us</a></li>
+            <li><a href="https://www.ariahealth.org/about-aria/connect-with-aria/media-center">News</a></li>
+            <li><a href="https://www.ariahealth.org/about-aria/ways-of-giving">Ways of Giving</a></li>
+            <li><a href="https://www.ariahealth.org/contact-us">Contact Us</a></li>
+            <li><a mat-button (click)="onPatientDashboard()">Welcome, {{(this.as.userSubject | async)?.firstname }}</a></li>
+            <li><a mat-button (click)="logout()">Log out</a></li>
+          </ul>
+        </div>
+        <ng-template #doctor>
+          <div *ngIf="(this.as.userSubject | async)?.profiles[0].type =='ROLE_DOCTOR'; else admin">
+            <ul>
+              <li><a mat-button (click)="onHome()">Home</a></li>
+              <li><a href="https://www.ariahealth.org/about-aria">About Us</a></li>
+              <li><a href="https://www.ariahealth.org/about-aria/connect-with-aria">Connect with Us</a></li>
+              <li><a href="https://www.ariahealth.org/about-aria/connect-with-aria/media-center">News</a></li>
+              <li><a href="https://www.ariahealth.org/about-aria/ways-of-giving">Ways of Giving</a></li>
+              <li><a href="https://www.ariahealth.org/contact-us">Contact Us</a></li>
+              <li><a mat-button (click)="onDoctorDashboard()">Welcome, {{(this.as.userSubject | async)?.firstname }}</a></li>
+              <li><a mat-button (click)="logout()">Log out</a></li>
+            </ul>
+          </div>
+        </ng-template>
+        <ng-template #admin>
+          <ul>
+            <li><a mat-button (click)="onHome()">Home</a></li>
+            <li><a href="https://www.ariahealth.org/about-aria">About Us</a></li>
+            <li><a href="https://www.ariahealth.org/about-aria/connect-with-aria">Connect with Us</a></li>
+            <li><a href="https://www.ariahealth.org/about-aria/connect-with-aria/media-center">News</a></li>
+            <li><a href="https://www.ariahealth.org/about-aria/ways-of-giving">Ways of Giving</a></li>
+            <li><a href="https://www.ariahealth.org/contact-us">Contact Us</a></li>
+            <li><a mat-button (click)="onAdminDashboard()">Welcome, {{(this.as.userSubject | async)?.firstname }}</a></li>
+            <li><a mat-button (click)="logout()">Log out</a></li>
+          </ul>
+        </ng-template>
+      </div>
+      <ng-template #loggedIn>
+        <ul>
+          <li><a mat-button (click)="onHome()">Home</a></li>
+          <li><a href="https://www.ariahealth.org/about-aria">About Us</a></li>
+          <li><a href="https://www.ariahealth.org/about-aria/connect-with-aria">Connect with Us</a></li>
+          <li><a href="https://www.ariahealth.org/about-aria/connect-with-aria/media-center">News</a></li>
+          <li><a href="https://www.ariahealth.org/about-aria/ways-of-giving">Ways of Giving</a></li>
+          <li><a href="https://www.ariahealth.org/contact-us">Contact Us</a></li>
+          <li><a mat-button (click)="onRegister()">Register</a></li>
+          <li><a mat-button (click)="onLogin()">Log In</a></li>
+        </ul>
+      </ng-template>
+    </div>
+    <script>
+      !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+    </script>
+  </div>
+  <div id="searchContainer">
+    <form action="https://www.ariahealth.org/about-aria/site-search" method="post" class="search-form">
+      <fieldset>
+        <input name="dosearch" type="hidden" value="1">
+        <input name="styleselect" type="hidden" value="Undefined">
+        <input title="search-field" class="text" type="text" name="searchtext" value="Search">
+        <input class="btn" type="image" src="./test_files/btn-search.gif" alt="Go">
+      </fieldset>
+    </form>
+  </div>
+  <div id="ePulseButton">
+    <a href="https://www.ariahealth.org/about-aria/connect-with-aria/epulse">
+      <img alt="ePulse" src="./test_files/epulse_button.png">
+    </a>
+  </div> 
+</div>
+
+<!--
+  <span *ngIf="(this.as.userSubject | async)?.name">
+    <button mat-button color="default">Login</button>
+    Welcome, {{(this.as.userSubject | async)?.name }}
+  </span>
+-->
+

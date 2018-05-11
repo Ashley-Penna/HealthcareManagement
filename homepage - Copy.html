@@ -1,0 +1,560 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<class="home" data-gr-c-s-loaded="true"><img src="./test_files/seg" width="1" height="1">
+<img src="./test_files/beacon.php" height="1" width="1" border="0" alt="">
+
+<!--[if IE 7]><link rel="stylesheet" type="text/css" href="assets/base/2010/css/ie7.css" media="screen"/><![endif]-->
+<!--[if lte IE 6]><link rel="stylesheet" type="text/css" href="assets/base/2010/css/ie6.css" media="screen"/><![endif]-->
+<script type="text/javascript">
+  function valid(){
+    var email = document.getElementById("email").value;
+    if(email.indexOf("@") < 2){
+      alert("Please enter a valid email address.");
+      return false;
+    }
+    email = email.substring(email.indexOf("@"));
+    if(email.indexOf(".") < 2){
+      alert("Please enter a valid email address.");
+      return false;
+    }
+    return true;
+  }
+  function noenter(){
+    return !(window.event && window.event.keyCode == 13);
+  }
+</script> 
+<link href="./test_files/css" rel="stylesheet"> 
+<link href="./test_files/bootstrap-namespaced.min.css" rel="stylesheet"> 
+<link href="./test_files/global-ribbon.css" rel="stylesheet"> 
+<link href="./test_files/animate.min.css" rel="stylesheet"> 
+<script src="./test_files/jquery-3.2.1.min.js.download"></script> 
+<script src="./test_files/bootstrap.min.js.download"></script> 
+<script> var jQuery3_2_1 = jQuery.noConflict(true); </script>
+<script>
+  if(document.location.host == 'www.ariahealth.org') {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-8678164-1', 'auto');
+    ga('require', 'displayfeatures');
+    ga('send', 'pageview');
+  } else {
+    function ga() { return true; }
+  }
+</script>
+
+<link href="./test_files/pagestyles.aspx" rel="stylesheet" type="text/css">
+<div class="jefferson-header"> 
+  <nav class="jefferson-header navbar navbar-default navbar-fixed-top" id="global-navigation"> 
+    <div class="container"> <!-- Brand and toggle get grouped for better mobile display --> 
+      <div class="navbar-header"> 
+        <button aria-expanded="false" class="navbar-toggle collapsed" data-target="#bs-global-navbar-collapse" data-toggle="collapse" type="button">
+          <span class="sr-only">Toggle navigation</span> 
+          <span class="icon-bar"></span> 
+          <span class="icon-bar"></span> 
+          <span class="icon-bar"></span>
+        </button> 
+        <a class="navbar-brand" href="http://www.jeffersonhealth.org/"><img alt="Jefferson Health" src="./test_files/jefferson-logo.png"></a> 
+        <div class="brand-skcc">Home of Sidney Kimmel Medical College</div> 
+      </div> 
+      <div class="collapse navbar-collapse" id="bs-global-navbar-collapse"> 
+        <ul class="nav navbar-nav navbar-right"> 
+          <li class="dropdown"> 
+            <a class="nav-heading" data-toggle="dropdown" href="https://www.ariahealth.org/#">All Locations
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-left"> 
+              <li><a href="http://www.abingtonhealth.org/our-locations/" target="_blank">Abington</a></li> 
+              <li><a href="https://www.ariahealth.org/about-aria/campus-locations-and-outpatient-sites">Aria</a></li> 
+              <li><a href="http://hospitals.jefferson.edu/find-a-location/?utm_source=jefferson&amp;utm_medium=nav&amp;utm_campaign=global" target="_blank">Jefferson</a></li> 
+              <li><a href="https://www.kennedyhealth.org/facilities-directory?field_category=1571&amp;title=&amp;field_addressgeo_latlon_op=-&amp;field_addressgeo_latlon=" target="_blank">Kennedy</a></li> 
+            </ul> 
+          </li> 
+          <li class="dropdown"> 
+            <a class="nav-heading" data-toggle="dropdown" href="https://www.ariahealth.org/#">Careers<span class="caret"></span></a> 
+            <ul class="dropdown-menu dropdown-menu-left"> 
+              <li><a href="http://www.abingtonhealth.org/JoinOurTeam/" target="_blank">Abington</a></li> 
+              <li><a href="https://www.ariahealth.org/careers-education">Aria</a></li> 
+              <li><a href="http://hr.jefferson.edu/human-resources/careers.html?utm_source=jefferson&amp;utm_medium=nav&amp;utm_campaign=global" target="_blank">Jefferson</a></li> 
+              <li><a href="https://www.kennedyhealth.org/careers" target="_blank">Kennedy</a></li>
+            </ul> 
+          </li> 
+          <li class="dropdown"> 
+            <a class="nav-heading" data-toggle="dropdown" href="https://www.ariahealth.org/#">Give Now<span class="caret"></span></a> 
+            <ul class="dropdown-menu dropdown-menu-left"> 
+              <li><a href="http://www.abingtonhealth.org/WaysOfGiving/" target="_blank">Abington</a></li> 
+              <li><a href="https://w3.jefferson.edu/giving/aria.html">Aria</a></li> 
+              <li><a href="https://w3.jefferson.edu/giving.cfm?utm_source=jefferson&amp;utm_medium=nav&amp;utm_campaign=global" target="_blank">Jefferson</a></li>
+              <li><a href="https://www.kennedyhealth.org/giving-kennedy-health-care-foundation" target="_blank">Kennedy</a></li>
+            </ul>
+          </li>
+          <li class="hidden-xs hidden-sm"> 
+            <div class="navbar-phone-1"> Call 1-800-JEFF-NOW </div> 
+          </li> 
+          <li><a class="nav-heading" href="http://www.jefferson.edu/university.html" style="border-bottom: 0;">UNIVERSITY</a></li> 
+          <li class="visible-xs visible-sm" style="padding-top: 20px;"> 
+            <div class="navbar-phone-2"> 1-800-JEFF-NOW </div> 
+          </li> 
+        </ul> 
+      </div>
+        <!-- /.navbar-collapse --> 
+    </div>
+    <!-- /.container-fluid --> 
+  </nav> 
+</div> 
+    
+<div id="wrapper">
+  <h1 class="logo">&nbsp;</h1>  
+  <strong class="print-logo"> 
+    <img src="./test_files/logo.gif" width="207" height="60" alt="image description">
+  </strong> 
+  <div class="visual">
+    <div id="gallery" class="gallery">
+      <div id="flashContainer">
+        <div class="frame">
+          <ul style="margin-left: 0px;">
+            <li style="display: block;">
+              <a href="http://hospitals.jefferson.edu/news/2018/01/jefferson-health-and-magee-rehabilitation-combine/" target="_blank">
+                <img alt="It&#39;s official.  Jefferson Health and Magee Rehabilitation combine." width="801" height="292" src="./test_files/Magee_Announcement.jpg">
+              </a>
+            </li> 
+<!--
+  <li><a href="https://www.ariahealth.org/about-aria/campus-locations-and-outpatient-sites"><img alt="Kennedy Health Joins Jefferson Health" width="801" height="292" src="assets/base/lib/image/home/Aria_Jefferson_Health_Homepage.jpg" /></a></li>--><!-- 
+  <li><a target="_blank" href="http://www.ariahealth.org/Programs-and-Services/Centers-of-Excellence/Heart-Care"><img alt="February is National Hearth Month.  Listen to your heart... Make your appointment today!" width="801" height="292" src="assets/base/lib/image/home/heartmonth.jpg" /></a></li>
+  <li><a href="/urgent-care"><img alt="Specialized care for non-emergent injuries or conditions.  Best of all, there's no long wait." width="801" height="292" src="assets/base/lib/image/home/urgentcare_home.jpg" /></a> 
+  <li><a href="http://www.ariahealth.org/abus"><img width="801" height="292" src="assets/base/lib/image/home/abus_home.jpg" alt="For some women, peace of mind requires looking beyond mammography." /></a></li>
+  <li><a href="http://www.ariahealth.org/emergency" target="_blank"><img width="801" height="292" src="assets/base/lib/image/home/emergency.jpg" alt="We care.  Emergency department at Torresdale now open!" /></a></li>
+  <li><a href="https://www.ariahealth.org/careers-education/school-of-nursing"><img width="801" height="292" src="assets/base/lib/image/home/nurseschool_home.jpg" alt="NCLEX Bowl Champions 2014-2015 &ndash; Aria Health School of Nursing" /></a></li>
+  <li><a href="http://www.aria3bortho.org" target="_blank"><img width="801" height="292" src="assets/base/lib/image/home/aria3bwco_home.jpg" alt="3B Orthopaedics world-class experience." /></a></li>
+  <li><a href="http://www.aria3bortho.org/remember" target="_blank"><img width="801" height="292" src="assets/base/lib/image/home/remember_when_home.jpg" alt="Remember when playing baseball felt this good?" /></a></li>
+  <li><a href="/about-aria/connect-with-aria/aria-health-a-caring-neighbor"><img width="801" height="292" src="assets/base/lib/image/home/caringneighbor_home.jpg" alt="View Caring Neighbors" /></a></li>
+  <li><a href="https://www.yourariahealth.org/default.aspx?pageid=4619" target="_blank"><img width="801" height="292" src="assets/base/lib/image/home/yah_nonflash.jpg" alt="Your Community. Your Conversations. Your Aria Health" /></a></li>
+  <li><a href="/about-aria/aria-health-mobile-streamlined-browsing-now-on-your-mobile-device"><img width="801" height="292" src="assets/base/lib/image/home/mobile_noflash.jpg" alt="Aria Health's new mobile website version brings streamlined browsing to your mobile device." /></a></li>
+  <li><a href="/about-aria/campus-locations-and-outpatient-sites/bucks-county-campus"><img width="801" height="292" src="assets/base/lib/image/home/bucks-county.jpg" alt="Locations" /></a></li>
+  <li><a href="/programs-and-services/centers-of-excellence/heart-care"><img width="801" height="292" src="assets/base/lib/image/home/heart-care.jpg" alt="Heart Care" /></a></li>
+  <li><a href="/programs-and-services/robotic-assisted-surgery"><img width="801" height="292" src="assets/base/lib/image/home/robotic-surgery.jpg" alt="Robotic Surgery" /></a></li>
+  <li><a href="/programs-and-services/centers-of-excellence/cancer-center"><img width="801" height="292" src="assets/base/lib/image/home/cancer-center.jpg" alt="Cancer Center" /></a></li>
+  <li><a href="/programs-and-services/centers-of-excellence/women-s-health"><img width="801" height="292" src="assets/base/lib/image/home/womens-health.jpg" alt="Women's Health" /></a></li>
+-->
+          </ul>
+        </div>
+        <!--<a class="btn-prev" href="#">prev</a> <a class="btn-next" href="#">next</a>-->
+      </div>
+    </div>
+    <strong class="contact-num">1-877-808-2742</strong>
+    <div class="quick-links">
+      <p class="titlecontainer">&nbsp;</p>
+      <ul>
+        <li class="link-find"><a href="https://www.ariahealth.org/contact-us/find-a-doctor">Find a Doctor</a></li>
+        <li class="link-make"><a href="https://www.ariahealth.org/contact-us/make-an-appointment">Make an Appointment</a></li>
+        <li class="link-maps"><a href="https://www.ariahealth.org/about-aria/campus-locations-and-outpatient-sites">Our Locations</a></li>
+        <li class="link-job"><a href="https://recruit.jefferson.edu/">Careers</a></li>
+        <li class="link-erexpress"><a target="_blank" href="https://www.ariahealth.org/er-express">Make a&nbsp;Reservation</a></li>
+        <li class="link-billpay"><a target="_blank" href="https://billpay.ariahealth.org/">Pay My Bill</a></li>
+        <li class="link-donation"><a target="_blank" href="https://w3.jefferson.edu/giving/aria.html">Give Now</a></li>
+      </ul>
+    </div>
+    <!--<div class="mobile-link"><a href="/mobile"><img alt="Aria Health Mobile" src="assets/base/2010/images/mobile_banner.jpg" /></a></div>-->
+  </div>
+  <div id="main">
+    <div class="column-2">
+      <div class="feature001"> 
+        <div class="home-feature safety">
+          <div class="image">
+            <a href="https://www.ariahealth.org/er-express"><img alt="Online Check-In" src="./test_files/online-checkin.jpg"></a>
+          </div>
+          <div class="info">
+            <h2>Online Check-In</h2>
+            <p>&nbsp;</p>
+            <h3><em>Reserve your place in line for Emergency Department, Urgent Care, and FastCare locations.<br><br>Click to Schedule</em></h3>
+            <p>&nbsp;</p>
+            <div>
+              <a class="fancy-button outline" href="https://www.ariahealth.org/er-express">Schedule</a>
+            </div>
+          </div>
+        </div>
+        <div class="home-feature allmed">
+          <div class="info">
+            <h2>Urgent Care</h2>
+            <p></p>
+            <img alt="" align="left" height="150px" src="./test_files/UrgentCarePic.png">
+            <p>Two convenient locations<br>to serve you.</p>
+            <p style="padding-bottom: 28px">&nbsp;</p>
+            <div>
+              <a class="fancy-button alt" href="https://www.ariahealth.org/urgent-care">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="featureholder001">
+        <div class="feature002wrapper">
+          <div class="feature002">
+            <div id="feature002_tabs">
+              <div class="feature002_container">
+                <span id="feature002_tab1" class="feature002_active feature002_tab1">
+                  <a onclick="openTab(1);" href="javascript:;">Latest Posts</a>
+                </span> 
+                <span id="feature002_tab2" class="feature002_inactive feature002_tab2">
+                  <a onclick="openTab(2);" href="javascript:;">Events</a>
+                </span>
+              </div>
+            </div>
+            <div id="feature002_tabcontent1" class="feature002_tabcontent" style="display: block;">
+              <div id="soxparent_89822d38576e4d908294f5b0a7a184b1">
+                <form method="post" id="soxhandler_89822d38576e4d908294f5b0a7a184b1"><input type="hidden" id="iCal_89822d38576e4d908294f5b0a7a184b1" name="iCal" value="">
+                  <input type="hidden" id="ajaxRequestElementId_89822d38576e4d908294f5b0a7a184b1" name="ajaxRequestElementId" value="">
+                  <input type="hidden" id="currentPage_89822d38576e4d908294f5b0a7a184b1" name="currentPage" value="">
+                  <input type="hidden" id="currentSortField_89822d38576e4d908294f5b0a7a184b1" name="currentSortField" value="">
+                  <input type="hidden" id="currentSortDirection_89822d38576e4d908294f5b0a7a184b1" name="currentSortDirection" value="">
+                  <input type="hidden" id="attributes_xml_89822d38576e4d908294f5b0a7a184b1" name="attributes_xml" value="">
+                  <input type="hidden" id="atts_89822d38576e4d908294f5b0a7a184b1" name="atts_89822d38576e4d908294f5b0a7a184b1">
+                  <div update_type="replace" pagetype="sox_handler" ajaxrequestelementid="89822d38576e4d908294f5b0a7a184b1" ajaxrequesttypes_respondto="category--search" attributesxml="[]">
+                    <p>
+                      <a href="https://www.yourariahealth.org/blog/Thursday-Health-Hack-134" target="_blank">
+                        <img alt="" align="left" width="49" height="49" src="./test_files/HealthHacks-031218A.jpg">
+                        <strong> Thursday Health Hack </strong>
+                      </a>
+                      <strong><br></strong>
+                    </p>
+                    <p>
+                      <a href="https://www.yourariahealth.org/blog/March-is-Colon-Cancer-Awareness-Month" target="_blank">
+                        <img alt="" align="left" width="49" height="49" src="./test_files/Berg-1909.jpg">
+                        <strong> March is Colon Cancer Awareness Month </strong>
+                      </a>
+                      <strong>
+                        <br>
+                      </strong>
+                    </p>
+                    <p>
+                      <a href="https://www.yourariahealth.org/blog/Colorectal-Cancer-Rates-Spike-in-Younger-Adults-What-You-Need-to-Know-2" target="_blank">
+                        <img alt="" align="left" width="49" height="49" src="./test_files/Berg-1909.jpg">
+                        <strong> Colorectal Cancer Rates Spike in Younger Adults... </strong>
+                      </a>
+                      <strong>
+                        <br>
+                      </strong>
+                    </p>
+                  </div>
+                  <input type="hidden" class="value-store" currentpage="1" currentsortfield="DATE" currentsortdirection="DESC" currentpageid="7816">
+                  <script type="text/javascript" language="javascript">
+                    function more_89822d38576e4d908294f5b0a7a184b1(){ 
+                      sox_handler_ajax_request_89822d38576e4d908294f5b0a7a184b1('more', 'append', null); 
+                    }
+                    function sort_89822d38576e4d908294f5b0a7a184b1(newSort){ 
+                      /*alert('in sort');*/ 
+                      sox_handler_ajax_request_89822d38576e4d908294f5b0a7a184b1('sort', 'replace', " new_sort='" + newSort + "'"); 
+                    }
+                    function sox_handler_ajax_request_89822d38576e4d908294f5b0a7a184b1(getType, response_update_type, additionGetAttributes){
+                      if ((additionGetAttributes == null) || (additionGetAttributes == "")){ 
+                        additionGetAttributes = ""; 
+                      }
+                      var valueStore = $('*[ajaxRequestElementId="89822d38576e4d908294f5b0a7a184b1"] ~ .value-store');
+                      var currentPage = valueStore.attr('currentPage');
+                      var currentSort = valueStore.attr('currentSortField');
+                      var currentSortDirection = valueStore.attr('currentSortDirection');
+                      var pageTypes = valueStore.attr('pageTypes');
+                      var pageid = valueStore.attr('currentpageid');
+                      var xml = "<get><sox_handler get_type='" + getType + "' response_update_type='" + response_update_type + "' current_page='" + currentPage + "' currentpageid ='" 
+                        + pageid + "' current_sort='" + currentSort + "' current_sort_direction='" + currentSortDirection + "'" + additionGetAttributes + " /></get>";
+                      ajaxReq(xml,null,null,"89822d38576e4d908294f5b0a7a184b1");
+                    }
+                    function update_current_page_89822d38576e4d908294f5b0a7a184b1(page){
+                      //alert('in update current page = ' + page);
+                      var valueStore = $('*[ajaxRequestElementId="89822d38576e4d908294f5b0a7a184b1"] ~ .value-store');
+                      valueStore.attr('currentPage', page);
+                      //alert('currentPage = ' + valueStore.attr('currentPage'));
+                    }
+                    function update_current_sort_field_89822d38576e4d908294f5b0a7a184b1(sort_field){
+                      //alert('in update current sort field = ' + sort_field);
+                      var valueStore = $('*[ajaxRequestElementId="89822d38576e4d908294f5b0a7a184b1"] ~ .value-store');
+                      valueStore.attr('currentSortField', sort_field);
+                      //alert('currentSortField = ' + valueStore.attr('currentSortField'));
+                    }
+                    function update_current_sort_direction_89822d38576e4d908294f5b0a7a184b1(sort_direction){
+                      //alert('in update current sort direction = ' + sort_direction);
+                      var valueStore = $('*[ajaxRequestElementId="89822d38576e4d908294f5b0a7a184b1"] ~ .value-store');
+                      valueStore.attr('currentSortDirection', sort_direction);
+                      //alert('currentSortDirection = ' + valueStore.attr('currentSortDirection'));
+                    }
+                    function rss_feed_89822d38576e4d908294f5b0a7a184b1(){ 
+                      sox_handler_ajax_request_89822d38576e4d908294f5b0a7a184b1('rss', 'na', null); 
+                    }
+                    function ical_feed_89822d38576e4d908294f5b0a7a184b1(){ 	
+                      var valueStore = $('*[ajaxRequestElementId="89822d38576e4d908294f5b0a7a184b1"] ~ .value-store');
+                      $('#iCal_89822d38576e4d908294f5b0a7a184b1').attr('value', 'true');     
+                      $('#ajaxRequestElementId_89822d38576e4d908294f5b0a7a184b1').attr('value', '89822d38576e4d908294f5b0a7a184b1');     
+                      $('#currentPage_89822d38576e4d908294f5b0a7a184b1').attr('value', valueStore.attr('currentPage'));     
+                      $('#currentSortField_89822d38576e4d908294f5b0a7a184b1').attr('value', valueStore.attr('currentSortField'));     
+                      $('#currentSortDirection_89822d38576e4d908294f5b0a7a184b1').attr('value', valueStore.attr('currentSortDirection'));    
+                      $('#attributes_xml_89822d38576e4d908294f5b0a7a184b1').attr('value', $('*[ajaxRequestElementId="89822d38576e4d908294f5b0a7a184b1"]').attr('attributesXml'));     
+                      $('#soxhandler_89822d38576e4d908294f5b0a7a184b1').submit(); 
+                    }
+                  </script>
+                </form>
+              </div>
+            </div>
+            <div id="feature002_tabcontent2" class="feature002_tabcontent" style="display: none;">
+              <div id="soxparent_a5c748a8c0c140929b015a629b127028">
+                <form method="post" id="soxhandler_a5c748a8c0c140929b015a629b127028">
+                  <input type="hidden" id="iCal_a5c748a8c0c140929b015a629b127028" name="iCal" value="">
+                  <input type="hidden" id="ajaxRequestElementId_a5c748a8c0c140929b015a629b127028" name="ajaxRequestElementId" value="">
+                  <input type="hidden" id="currentPage_a5c748a8c0c140929b015a629b127028" name="currentPage" value="">
+                  <input type="hidden" id="currentSortField_a5c748a8c0c140929b015a629b127028" name="currentSortField" value="">
+                  <input type="hidden" id="currentSortDirection_a5c748a8c0c140929b015a629b127028" name="currentSortDirection" value="">
+                  <input type="hidden" id="attributes_xml_a5c748a8c0c140929b015a629b127028" name="attributes_xml" value="">
+                  <input type="hidden" id="atts_a5c748a8c0c140929b015a629b127028" name="atts_a5c748a8c0c140929b015a629b127028">
+                  <div update_type="replace" pagetype="sox_handler" ajaxrequestelementid="a5c748a8c0c140929b015a629b127028" ajaxrequesttypes_respondto="category--search" attributesxml="[]"></div>
+                  <input type="hidden" class="value-store" currentpage="1" currentsortfield="DATE" currentsortdirection="ASC" currentpageid="7815">
+                  <script type="text/javascript" language="javascript">
+                    function more_a5c748a8c0c140929b015a629b127028(){ 
+                      sox_handler_ajax_request_a5c748a8c0c140929b015a629b127028('more', 'append', null); 
+                    }
+                    function sort_a5c748a8c0c140929b015a629b127028(newSort){
+                      /*alert('in sort');*/ 
+                      sox_handler_ajax_request_a5c748a8c0c140929b015a629b127028('sort', 'replace', " new_sort='" + newSort + "'"); 
+                    }
+                    function sox_handler_ajax_request_a5c748a8c0c140929b015a629b127028(getType, response_update_type, additionGetAttributes){
+                      if ((additionGetAttributes == null) || (additionGetAttributes == "")){ 
+                        additionGetAttributes = ""; 
+                      }
+                      var valueStore = $('*[ajaxRequestElementId="a5c748a8c0c140929b015a629b127028"] ~ .value-store');
+                      var currentPage = valueStore.attr('currentPage');
+                      var currentSort = valueStore.attr('currentSortField');
+                      var currentSortDirection = valueStore.attr('currentSortDirection');
+                      var pageTypes = valueStore.attr('pageTypes');
+                      var pageid = valueStore.attr('currentpageid');
+                      var xml = "<get><sox_handler get_type='" + getType + "' response_update_type='" + response_update_type + "' current_page='" + currentPage + "' currentpageid ='" 
+                        + pageid + "' current_sort='" + currentSort + "' current_sort_direction='" + currentSortDirection + "'" + additionGetAttributes + " /></get>";
+                      ajaxReq(xml,null,null,"a5c748a8c0c140929b015a629b127028");
+                    }
+                    function update_current_page_a5c748a8c0c140929b015a629b127028(page){
+                      //alert('in update current page = ' + page);
+                      var valueStore = $('*[ajaxRequestElementId="a5c748a8c0c140929b015a629b127028"] ~ .value-store');
+                      valueStore.attr('currentPage', page);
+                      //alert('currentPage = ' + valueStore.attr('currentPage'));
+                    }
+                    function update_current_sort_field_a5c748a8c0c140929b015a629b127028(sort_field){
+                      //alert('in update current sort field = ' + sort_field);
+                      var valueStore = $('*[ajaxRequestElementId="a5c748a8c0c140929b015a629b127028"] ~ .value-store');
+                      valueStore.attr('currentSortField', sort_field);
+                      //alert('currentSortField = ' + valueStore.attr('currentSortField'));
+                    }
+                    function update_current_sort_direction_a5c748a8c0c140929b015a629b127028(sort_direction){
+                      //alert('in update current sort direction = ' + sort_direction);
+                      var valueStore = $('*[ajaxRequestElementId="a5c748a8c0c140929b015a629b127028"] ~ .value-store');
+                      valueStore.attr('currentSortDirection', sort_direction);
+                      //alert('currentSortDirection = ' + valueStore.attr('currentSortDirection'));
+                    }
+                    function rss_feed_a5c748a8c0c140929b015a629b127028(){ 
+                      sox_handler_ajax_request_a5c748a8c0c140929b015a629b127028('rss', 'na', null); 
+                    }
+                    function ical_feed_a5c748a8c0c140929b015a629b127028(){ 	
+                      var valueStore = $('*[ajaxRequestElementId="a5c748a8c0c140929b015a629b127028"] ~ .value-store');
+                      $('#iCal_a5c748a8c0c140929b015a629b127028').attr('value', 'true');     
+                      $('#ajaxRequestElementId_a5c748a8c0c140929b015a629b127028').attr('value', 'a5c748a8c0c140929b015a629b127028');     
+                      $('#currentPage_a5c748a8c0c140929b015a629b127028').attr('value', valueStore.attr('currentPage'));     
+                      $('#currentSortField_a5c748a8c0c140929b015a629b127028').attr('value', valueStore.attr('currentSortField'));     
+                      $('#currentSortDirection_a5c748a8c0c140929b015a629b127028').attr('value', valueStore.attr('currentSortDirection'));     
+                      $('#attributes_xml_a5c748a8c0c140929b015a629b127028').attr('value', $('*[ajaxRequestElementId="a5c748a8c0c140929b015a629b127028"]').attr('attributesXml'));     
+                      $('#soxhandler_a5c748a8c0c140929b015a629b127028').submit(); 
+                    }
+                  </script>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="feature002bottom"></div>
+        </div>
+
+        <div class="feature003"> 
+          <p>
+            <a href="http://hospitals.jefferson.edu/news/2017/08/us-news-and-world-report-2017-2018.html" target="_blank">
+              <img border="0" alt="Invenia ABUS" src="./test_files/aria-sidebar-ads-3.jpg"> 
+            </a>
+          </p>
+          <p><img alt="" src="./test_files/lineg.jpg"></p>
+          <p>
+            <a href="https://www.ariahealth.org/programs-and-services/centers-of-excellence/women-s-health/invenia-abus-automated-breast-ultrasound-system">
+              <img border="0" alt="Automated Breast Ultrasound System" src="./test_files/ultrasound-banner.jpg"> 
+            </a>
+          </p>
+          <p><img alt="" src="./test_files/lineg.jpg"></p>
+          <p>
+            <a target="_blank" href="http://www.aria3bortho.org/">
+              <img border="0" name="img_efe0ec771c494616addfa3c5543f29b0" alt="World-Class Orthopaedic Care" width="265" align="absMiddle" height="120" src="./test_files/aria-3b-button.jpg"> 
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <div id="header">
+    <div class="top-bar">
+      <div class="top-nav">
+        <ul>
+          <li><a href="https://www.ariahealth.org/">Home</a></li>
+          <li><a href="https://www.ariahealth.org/about-aria">About Us</a></li>
+          <li><a href="https://www.ariahealth.org/about-aria/connect-with-aria">Connect with Us</a></li>
+          <li><a href="https://www.ariahealth.org/about-aria/connect-with-aria/media-center">News</a></li>
+          <li><a href="https://www.ariahealth.org/about-aria/ways-of-giving">Ways of Giving</a></li>
+          <li><a href="https://www.ariahealth.org/contact-us">Contact Us</a></li>
+        </ul>
+      </div>
+      <script>
+        !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+      </script>
+    </div>
+    <div id="searchContainer">
+      <form action="https://www.ariahealth.org/about-aria/site-search" method="post" class="search-form">
+        <fieldset>
+          <input name="dosearch" type="hidden" value="1">
+          <input name="styleselect" type="hidden" value="Undefined">
+          <input title="search-field" class="text" type="text" name="searchtext" value="Search">
+          <input class="btn" type="image" src="./test_files/btn-search.gif" alt="Go">
+        </fieldset>
+      </form>
+    </div>
+    <div id="ePulseButton">
+      <a href="https://www.ariahealth.org/about-aria/connect-with-aria/epulse">
+        <img alt="ePulse" src="./test_files/epulse_button.png">
+      </a>
+    </div> 
+  </div>
+  <div class="navigation">
+    <ul id="nav">
+      <li class=" hasdrop">
+        <a href="https://www.ariahealth.org/Programs-and-Services" class=" hasdroplink">Programs &amp; Services</a>
+        <div class="drop">
+          <ul>
+            <li><a href="https://www.ariahealth.org/robotics"><span>Robotic Surgery</span></a></li>
+            <li><a href="https://www.ariahealth.org/programs-and-services/centers-of-excellence/cancer-center"><span>Cancer Center</span></a></li>
+            <li><a href="https://www.ariahealth.org/programs-and-services/centers-of-excellence/heart-care"><span>Heart Care</span></a></li>
+            <li><a href="https://www.ariahealth.org/programs-and-services/centers-of-excellence/orthopedic-care"><span>Orthopedic Care</span></a></li>
+            <li><a href="https://www.ariahealth.org/programs-and-services/centers-of-excellence/women-s-health"><span>Women's Health</span></a></li>
+            <li><a href="https://www.ariahealth.org/programs-and-services/centers-of-excellence/see-all"><span>See All</span></a></li>
+          </ul>
+        </div>
+      </li>
+      <li class=" hasdrop">
+        <a href="https://www.ariahealth.org/for-patients-guests" class=" hasdroplink">Patients &amp; Guests</a>
+        <div class="drop">
+          <ul>
+            <li><a href="https://www.ariahealth.org/for-patients-guests/quality-of-care"><span>Quality of Care</span></a></li>
+            <li><a href="https://www.ariahealth.org/for-patients-guests/aria-s-health-source-call-center"><span>Aria's Health Source Call Center</span></a></li>
+            <li class=""><a href="https://www.ariahealth.org/for-patients-guests/find-a-doctor"><span>Find a Doctor</span></a></li>
+            <li><a href="https://www.ariahealth.org/for-patients-guests/make-an-appointment"><span>Make an Appointment</span></a></li>
+            <li><a href="https://www.ariahealth.org/for-patients-guests/patient-family-advisory-council"><span>Patient &amp; Family&nbsp;Advisory Council</span></a></li>
+            <li><a href="https://www.ariahealth.org/for-patients-guests/locations-directions"><span>Locations &amp; Directions</span></a></li>
+            <li><a href="https://www.ariahealth.org/for-patients-guests/clinical-trials"><span>Clinical Trials</span></a></li>
+            <li><a href="https://www.ariahealth.org/for-patients-guests/charity-care-and-financial-assistance"><span>Charity Care and Financial Assistance</span></a></li>
+            <li><a href="https://www.ariahealth.org/for-patients-guests/contact-us"><span>Contact Us</span></a></li>
+          </ul>
+        </div>
+      </li>     
+      <li class=" hasdrop">
+        <a href="https://www.ariahealth.org/wellness-programs" class=" hasdroplink">Classes &amp; Events</a>
+        <div class="drop">
+          <ul>
+            <li><a href="https://www.ariahealth.org/wellness-programs/health-assessments"><span>Health Assessments</span></a></li>
+            <li class=""><a href="https://www.ariahealth.org/wellness-programs/nutrition"><span>Nutrition</span></a></li>
+            <li><a href="https://www.ariahealth.org/wellness-programs/fitness"><span>Fitness</span></a></li>
+            <li><a href="https://www.ariahealth.org/wellness-programs/programs-special-events"><span>Programs &amp; Special Events</span></a></li>
+            <li><a href="https://www.ariahealth.org/wellness-programs/support-groups"><span>Support Groups</span></a></li>
+          </ul>
+        </div>
+      </li>     
+      <li class=" hasdrop">
+        <a href="https://www.ariahealth.org/careers-education" class=" hasdroplink">Careers &amp; Education</a>
+        <div class="drop">
+          <ul>
+            <li><a href="https://www.ariahealth.org/careers-education/employment"><span>Employment</span></a></li>
+            <li><a href="https://www.ariahealth.org/careers-education/school-of-nursing"><span>School of Nursing</span></a></li>
+            <li><a href="https://www.ariahealth.org/careers-education/graduate-medical-education"><span>Graduate Medical Education</span></a></li>
+            <li><a href="https://www.ariahealth.org/careers-education/medical-student-programs"><span>Medical Student Programs</span></a></li>
+            <li><a href="https://www.ariahealth.org/careers-education/nursing-at-aria"><span>Nursing at Aria</span></a></li>
+          </ul>
+        </div>
+      </li>
+      <!-- TemplateEndEditable -->     
+      <li class=" hasdrop">
+        <a href="https://www.ariahealth.org/community-health/community-health-dashboard" class=" hasdroplink">Community Health</a> 
+        <div class="drop">
+          <ul>
+            <li><a href="https://www.ariahealth.org/community-health/national-doctors-day"><span>National Doctors' Day</span></a></li>
+            <li><a href="https://www.ariahealth.org/community-health/community-health-dashboard"><span>Community Health Dashboard</span></a></li>
+          </ul>
+        </div>
+      </li>
+    </ul>  
+  </div>
+
+
+  <div id="footer">
+    <table style="float: right; padding-left: 40px" cellspacing="2" border="0">
+      <tbody>
+      <tr>
+        <td><a target="_blank" onclick="_gaq.push([trackEvent,Footer, social, FB]);" href="http://facebook.com/ariahealth"><img alt="Facebook" src="./test_files/icon_sm_facebook.png"></a></td>
+        <td><a target="_blank" onclick="_gaq.push([_trackEvent, Footer, social, TW]);" href="http://twitter.com/#!/ariahealth"><img alt="Twitter" src="./test_files/icon_sm_twitter.jpg"></a></td>
+        <td><a target="_blank" onclick="_gaq.push([_trackEvent, Footer, social, YT]);" href="http://www.youtube.com/ariahealthsocial"><img alt="YouTube" src="./test_files/icon_sm_youtube.jpg"></a></td>
+        <td><a target="_blank" onclick="_gaq.push([_trackEvent, Footer, social, LI]);" href="http://www.linkedin.com/company/aria-health"><img alt="LinkedIn" src="./test_files/icon_sm_linkedin.jpg"></a></td>
+        <td><a target="_blank" onclick="_gaq.push([_trackEvent, Footer, social, INS]);" href="http://instagram.com/ariahealth"><img alt="Instagram" src="./test_files/icon_sm_instagram.png"></a></td>
+        <!--
+          <td><a target="_blank" onclick="_gaq.push(['_trackEvent', 'Footer social', 'FS']);" href="https://foursquare.com/v/aria-health-frankford-campus/4b76e86ef964a52053692ee3"><img alt="FourSquare" src="assets/base/2010/images/icon_sm_foursquare.jpg" /></a></td>
+        -->
+        <td><a target="_blank" onclick="_gaq.push([_trackEvent, Footer, social, GPlus]);" href="https://plus.google.com/u/0/115431308019103791536/posts"><img alt="Google Plus" src="./test_files/icon_sm_googleplus.png"></a></td>
+        <td><a target="_blank" onclick="_gaq.push([_trackEvent, Footer, social, PIN]);" href="http://www.pinterest.com/ariahealth/"><img alt="Pinterest" src="./test_files/icon_sm_pinterest.png"></a></td>
+        <td><a target="_blank" onclick="_gaq.push([_trackEvent, Footer, social, YAH]);" href="http://www.yourariahealth.org/"><img alt="YourAriaHealth" src="./test_files/icon_sm_yourariahealth.jpg"></a></td>
+      </tr>
+      </tbody>
+    </table>
+    <ul>
+      <li><a href="https://www.ariahealth.org/">Home</a></li>
+      <li><a href="https://www.ariahealth.org/about-aria">About Us</a></li>
+      <li><a href="https://www.ariahealth.org/about-aria/connect-with-aria">Connect with Us</a></li>
+      <li><a href="https://www.ariahealth.org/about-aria/connect-with-aria/media-center">Media Center</a></li>
+      <li><a href="https://www.ariahealth.org/contact-us">Contact Us</a></li>
+      <li><a href="https://www.ariahealth.org/Programs-and-Services">Programs &amp; Services</a></li>
+      <li><a href="https://www.ariahealth.org/for-patients-guests">For Patients &amp; Visitors</a></li>
+      <li><a href="https://www.ariahealth.org/wellness-programs">Classes &amp; Events</a></li>
+      <li><a href="https://www.ariahealth.org/careers-education">Careers&nbsp;&amp;&nbsp;Education</a></li>
+      <li><a href="https://iresponse.ariahealth.org/iresponse">iResponse</a></li>
+      <li><a href="https://www.ariahealth.org/er-express">ER Check-in</a></li>
+      <li><a href="https://www.ariahealth.org/about-aria/ways-of-giving">Ways of Giving</a></li>
+      <li><a href="https://www.ariahealth.org/site-map">Site Map</a></li>
+    </ul>
+    <div class="holder">
+      <p>
+        <strong class="logo2">The joint Commission</strong> 
+        <strong class="num">1-877-808-2742</strong>
+        <strong class="copy">©2016 Jefferson Health – Northeast</strong>
+      </p>
+      <img src="./test_files/JointComm.png" style="width:207px; height:auto;" alt="image description">
+    </div>
+    <p>The Web site for Jefferson Health – Northeast, its contents and programs, is provided for informational and educational purposes only and is not intended as medical advice 
+       nor is it intended to create any physician-patient relationship. Please remember that this information should not substitute for a visit or a consultation with a health care 
+       provider. The views or opinions expressed in the resources provided do not necessarily reflect those of Jefferson Health – Northeast or their staffs. By using this Web site, 
+       you accept these terms of use. Please read our 
+      <a href="https://www.ariahealth.org/contact-us/privacy-statement">privacy statement</a> and our 
+      <a target="_blank" href="https://www.ariahealth.org/assets/base/2016/HIPAA/HIPAA_ebrochure.pdf">HIPAA Information</a>.
+    </p>
+  </div>
+</div>
+<!-- START VOC tags ARIA ->
+<script type="text/javascript">
+var vocBaseURL = (("https:" == document.location.protocol) ? "https://kc1v.voice-of-customers.com/" : "http://kc1v.voice-of-customers.com/");
+var analyticsBaseURL = (("https:" == document.location.protocol) ? "https://kc1a.voice-of-customers.com/" : "http://kc1a.voice-of-customers.com/");
+document.write(unescape("%3Cscript src='" + vocBaseURL + "javascripts/knowclick-aria.js' type='text/javascript'%3E%3C/script%3E"));
+document.write(unescape("%3Cscript src='" + analyticsBaseURL + "analytics.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var vocTracker = VOC.createTracker(3, 'ARIA1', analyticsBaseURL, vocBaseURL);
+vocTracker.generateRequest();
+} catch( err ) {}
+</script>
+<!- End VOC tags ARIA -->
+
+
+<router-outlet></router-outlet>

@@ -1,0 +1,90 @@
+/*
+  Tabs.js - Javascript/JQuery code that implements dynamic tabs on a website.
+  Written by Josh Kohler; josh.kohler@liquidint.com
+  11 Oct 2011
+*/
+
+var tabCount; // Total number of tabs
+var currentTab; // Index of the currently active tab
+var activeTabClass; // Active tab style class
+var inactiveTabClass; // Inactive tab style class
+
+// tabInit() - Initializes the tab system
+// @param numTabs - The number of tabs on this page
+// @param activeClass - The CSS class for active tabs
+// @param inactiveClass - The CSS class for inactive tabs
+
+function tabInit(numTabs, activeClass, inactiveClass)
+{
+
+    // Set the total number of tabs (n)
+    tabCount = numTabs;
+
+    // Set the tab style classes
+    activeTabClass = activeClass;
+    inactiveTabClass = inactiveClass;
+
+    // Add the inactive tab class to each tab, and hide all contents
+    for (var a = 1; a <= tabCount; a++)
+    {
+        jQuery("#feature002_tab" + a).addClass(inactiveTabClass);
+        jQuery("#feature002_tabcontent" + a).hide();
+    }
+
+    // Display the first tab
+    openTab(1, true);
+
+}
+
+// openTab() - Shows the designated tab and hides the content of all other tabs
+//             Note:  If no argument for "init" is passed, undefined value is evaluated as "false", so it is safe to leave init off instead of adding false to every call.
+// @param newTab - int - Index of the new tab to display (1 to n)
+// @param init - boolean - Initial tab (i.e. currently displayed tab doesn't exist, so don't do anything to it). (true/false)
+
+function openTab(newTab, init)
+{
+
+    // Check to make sure the new tab is not the same as the current tab
+
+    if (newTab != currentTab) {
+
+        // New tab is different from the current tab
+
+        // Set current tab to inactive style (if tab is open)
+
+        if (!init)
+        {
+            jQuery("#feature002_tab" + currentTab).removeClass(activeTabClass);
+            jQuery("#feature002_tab" + currentTab).addClass(inactiveTabClass);
+        }
+
+        // Set new tab to active style
+
+        jQuery("#feature002_tab" + newTab).removeClass(inactiveTabClass);
+        jQuery("#feature002_tab" + newTab).addClass(activeTabClass);
+
+        // Hide current tab contents (if tab is open)
+
+
+        if (!init)
+        {
+            jQuery("#feature002_tabcontent" + currentTab).hide();
+        }
+
+        // Show new tab contents
+
+        jQuery("#feature002_tabcontent" + newTab).show();
+
+        // Set new tab to the currently active tab
+
+        currentTab = newTab;
+
+    } else
+    {
+
+        // New tab is the same as the currently displayed tab
+        // Nothing needs to happen here.
+
+    }
+
+}

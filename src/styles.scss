@@ -1,0 +1,38 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+body {
+  margin: 0;
+}
+
+.mat-card:not([class*=mat-elevation-z]){
+    box-shadow: none !important;
+}
+a.mat-button{
+  font-size: 10pt !important;
+  padding-left: 0pt !important;
+  padding-right: 0pt !important;
+  min-width: 0pt !important;
+}
+#refineSearchHeader, #rightContent > div.resultsTable > div.resultsIntroText.row > div > div.row > div.col-md-4.col-sm-4.hidden-xs.btn.btn-primary, #rightContent > footer, #additionalSearchCriteriaHeader {
+  background-color: #4578bc!important;
+  border-color: #4578bc!important;
+}
+
+#wrapper > main > app-home-page > div.visual > div.quick-links > ul > li.link-find > a > div.mat-button-focus-overlay{
+  background-color: transparent !important;
+}
+
+#wrapper > main > app-home-page > div.visual > div.quick-links > ul{
+  font-size: 14px !important;
+  line-height: 20px !important;
+}
+#wrapper > main > app-home-page > div.visual > div.quick-links > ul > li.link-find > a{
+  font-size: 14px !important;
+}
+#details, #details > div:nth-child(4) > div > div{
+  width:auto !important;
+}
+
+a.mat-raised-button:hover{
+  color: #fff !important;
+}

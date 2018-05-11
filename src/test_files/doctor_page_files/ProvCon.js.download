@@ -1,0 +1,55 @@
+﻿function refineSearchAccordion() {
+	// Put any additional search criteria into a jQuery accordion with the single accordion closed by default; has cookie persistence
+
+	// Set up a few variables
+	var userpanel = $('.refineableSearch');
+
+	userpanel.accordion({
+		header: 'h2',
+		collapsible: true,
+		heightStyle: 'content'
+	});
+
+	var oldWidth = 0;
+
+	$(window).resize(function () {
+		// have to check old and new widths because
+		// IE 8 is dumb and calls resize even when it's not supposed to.
+		var currWidth = $(window).width();
+		if (oldWidth != currWidth) {
+
+			if (currWidth > 992) {
+			    userpanel.accordion('option', 'active', 0);
+			    $('#accordionAdditionalSearch').accordion('option', 'active', 0);
+			}
+			else {
+			    userpanel.accordion('option', 'active', false);
+			    $('#accordionAdditionalSearch').accordion('option', 'active', false);
+			}
+			oldWidth = currWidth;
+		}
+	});
+
+	$(window).resize();
+}
+
+$(document).ready(function () {
+	$('.viewLocation').click(function () {
+		$.cookie('setLocation', 'true', { path: '/Heart' });
+	});
+
+	if ($('#details.container').length > 0) {
+		var switchToLocationTab = $.cookie('setLocation') === 'true';
+		if (switchToLocationTab) {
+			var $tabs = $('#tabsProfile')
+			if ($tabs.length > 0) {
+				var locationTab = $tabs.find('.location').attr('href');
+				var index = $('#tabsProfile a[href="' + locationTab + '"]').parent().index();
+				$('#tabsProfile').tabs({ active: index });
+			}
+			$.cookie('setLocation', 'false', { path: '/Heart' });
+		}
+	}
+
+	refineSearchAccordion();
+});
